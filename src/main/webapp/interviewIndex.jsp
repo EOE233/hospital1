@@ -12,6 +12,5 @@
 </head>
 <body>
     <a href="checkInterview.jsp">查看预约信息</a>
-    <a href="addInterview.jsp">添加预约信息</a>
 </body>
 </html>
