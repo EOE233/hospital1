@@ -146,4 +146,43 @@
         <url-pattern>/delInterviewServlet</url-pattern>
     </servlet-mapping>
 
+
+    <!-- wj -->
+    <servlet>
+        <servlet-name>adminLogin</servlet-name>
+        <servlet-class>servlets.adminLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adminLogin</servlet-name>
+        <url-pattern>/adminLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateDoctorServlet</servlet-name>
+        <servlet-class>servlets.updateDoctorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateDoctorServlet</servlet-name>
+        <url-pattern>/updateDoctorServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>delDoctorServlet</servlet-name>
+        <servlet-class>servlets.delDoctorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delDoctorServlet</servlet-name>
+        <url-pattern>/delDoctorServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addDoctorServlet</servlet-name>
+        <servlet-class>servlets.addDoctorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addDoctorServlet</servlet-name>
+        <url-pattern>/addDoctorServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
+
+
