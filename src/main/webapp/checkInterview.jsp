@@ -60,6 +60,8 @@
     </table>
 
     <a href="addInterview.jsp?P_id=<%=arrayLists.get(0).get(1)%>&P_name=<%=arrayLists.get(0).get(2)%>">添加预约</a>
+    <br>
+    <a href="interviewIndex.jsp">返回</a>
 </div>
 </body>
 </html>
