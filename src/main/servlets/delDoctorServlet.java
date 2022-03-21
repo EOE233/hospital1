@@ -17,7 +17,7 @@ public class delDoctorServlet extends HttpServlet {
         doctorDAOImpl doctorDAO = new doctorDAOImpl();
         doctorDAO.delDoctor(D_id);
 
-        response.sendRedirect("doctorManage.jsp");
+        response.sendRedirect("master/doctorManage.jsp");
 
     }
 }

@@ -21,10 +21,10 @@ public class adminLoginServlet extends HttpServlet {
         adminDAOImpl adminDAO = new adminDAOImpl();
 
         if(adminDAO.adminLogin(M_id,M_pwd)){
-            request.getRequestDispatcher("/doctorManage.jsp").forward(request, response);
+            request.getRequestDispatcher("/master/doctorManage.jsp").forward(request, response);
         }else {
             request.setAttribute("message", "登录失败,账号或密码错误");
-            request.getRequestDispatcher("/adminLogin.jsp").forward(request, response);
+            request.getRequestDispatcher("master/adminLogin.jsp").forward(request, response);
         }
 
     }

@@ -27,6 +27,6 @@ public class addDoctorServlet extends HttpServlet {
         doctorDAOImpl doctorDAO = new doctorDAOImpl();
         doctorDAO.addDoctor(doctor);
 
-        response.sendRedirect("doctorManage.jsp");
+        response.sendRedirect("master/doctorManage.jsp");
     }
 }
