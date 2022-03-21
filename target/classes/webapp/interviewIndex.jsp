@@ -11,6 +11,11 @@
     <title>Title</title>
 </head>
 <body>
+<div align="center">
     <a href="checkInterview.jsp">查看预约信息</a>
+    <br>
+    <a href="patientLogin.jsp">返回登录</a>
+</div>
+
 </body>
 </html>
