@@ -1,0 +1,149 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <!-- 登录 -->
+    <servlet>
+        <servlet-name>DoctorLoginServlet</servlet-name>
+        <servlet-class>controller.doctor.DoctorLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoctorLoginServlet</servlet-name>
+        <url-pattern>/doctorLogin</url-pattern>
+    </servlet-mapping>
+
+    <!-- 注册 -->
+    <servlet>
+        <servlet-name>DoctorRegServlet</servlet-name>
+        <servlet-class>controller.doctor.DoctorRegServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoctorRegServlet</servlet-name>
+        <url-pattern>/doctorReg</url-pattern>
+    </servlet-mapping>
+
+    <!-- 患者信息修改 -->
+    <servlet>
+        <servlet-name>PatientAlterServlet</servlet-name>
+        <servlet-class>controller.patient.PatientAlterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PatientAlterServlet</servlet-name>
+        <url-pattern>/patientAlterServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 患者信息删除 -->
+    <servlet>
+        <servlet-name>PatientDeleteServlet</servlet-name>
+        <servlet-class>controller.patient.PatientDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PatientDeleteServlet</servlet-name>
+        <url-pattern>/patientDeleteServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 过滤器 -->
+    <filter>
+        <filter-name>ChineseFilter</filter-name>
+        <filter-class>filter.ChineseFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ChineseFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>InterviewDelServlet</servlet-name>
+        <servlet-class>controller.master.InterviewDelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InterviewDelServlet</servlet-name>
+        <url-pattern>/master/InterviewDelServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InterviewAlterServlet</servlet-name>
+        <servlet-class>controller.master.InterviewAlterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InterviewAlterServlet</servlet-name>
+        <url-pattern>/master/InterviewAlterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SCHAlterServlet</servlet-name>
+        <servlet-class>controller.SCHAlterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SCHAlterServlet</servlet-name>
+        <url-pattern>/master/SCHAlterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SCHDELServlet</servlet-name>
+        <servlet-class>controller.SCHDELServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SCHDELServlet</servlet-name>
+        <url-pattern>/master/SCHDELServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SURAlterServlet</servlet-name>
+        <servlet-class>controller.SURAlterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SURAlterServlet</servlet-name>
+        <url-pattern>/master/SURAlterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SURDELServlet</servlet-name>
+        <servlet-class>controller.SURDELServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SURDELServlet</servlet-name>
+        <url-pattern>/master/SURDELServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addInterviewServlet</servlet-name>
+        <servlet-class>servlets.addInterviewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addInterviewServlet</servlet-name>
+        <url-pattern>/addInterviewServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateInterviewServlet</servlet-name>
+        <servlet-class>servlets.updateInterviewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateInterviewServlet</servlet-name>
+        <url-pattern>/updateInterviewServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>patientLoginServlet</servlet-name>
+        <servlet-class>servlets.patientLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>patientLoginServlet</servlet-name>
+        <url-pattern>/patientLoginServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>delInterviewServlet</servlet-name>
+        <servlet-class>servlets.delInterviewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delInterviewServlet</servlet-name>
+        <url-pattern>/delInterviewServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,53 @@
+  <servlet>
+    <servlet-name>InterviewDelServlet</servlet-name>
+    <servlet-class>controller.InterviewDelServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InterviewDelServlet</servlet-name>
+    <url-pattern>/master/InterviewDelServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>InterviewAlterServlet</servlet-name>
+    <servlet-class>controller.InterviewAlterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InterviewAlterServlet</servlet-name>
+    <url-pattern>/master/InterviewAlterServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SCHAlterServlet</servlet-name>
+    <servlet-class>controller.SCHAlterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SCHAlterServlet</servlet-name>
+    <url-pattern>/master/SCHAlterServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SCHDELServlet</servlet-name>
+    <servlet-class>controller.SCHDELServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SCHDELServlet</servlet-name>
+    <url-pattern>/master/SCHDELServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SURAlterServlet</servlet-name>
+    <servlet-class>controller.SURAlterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SURAlterServlet</servlet-name>
+    <url-pattern>/master/SURAlterServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SURDELServlet</servlet-name>
+    <servlet-class>controller.SURDELServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SURDELServlet</servlet-name>
+    <url-pattern>/master/SURDELServlet</url-pattern>
+  </servlet-mapping>
