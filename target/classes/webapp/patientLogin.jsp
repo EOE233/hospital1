@@ -40,7 +40,8 @@
             </tr>
         </table>
     </form>
-
+    <br>
+    <a href="http://localhost:8080/hospital/index.jsp"><button>返回主页</button></a>
 </div>
 </body>
 </html>
