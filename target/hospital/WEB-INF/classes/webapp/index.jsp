@@ -11,7 +11,7 @@
     <h4>wj</h4>
     <a href="/hospital/master/adminLogin.jsp">管理员登录</a>
     <a href="/hospital/master/addDoctor.jsp">添加医生</a>
-    <a href="/hospital/master/doctorManage">医生管理</a>
+    <a href="/hospital/master/doctorManage.jsp">医生管理</a>
     <a href="/hospital/master/updateDoctor.jsp">管理医生信息</a>
     <h4>jyl</h4>
     <a href="/hospital/master/master_patient_info.jsp">管理患者信息</a>
