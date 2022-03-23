@@ -21,7 +21,6 @@
     ArrayList<ArrayList> arrayLists= null;
     String defaultP_idP_name;
     defaultP_idP_name = request.getParameter("P_id")+":"+request.getParameter("P_name");
-
 %>
 <div align="center">
     <h2>申请预约信息</h2>
