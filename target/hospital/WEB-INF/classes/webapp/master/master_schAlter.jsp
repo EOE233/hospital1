@@ -45,7 +45,7 @@
             </tr>
             <tr>
                 <td>排班日期</td>
-                <td><input type="text" value="<%=SCH_date %>" name="DSCH_date" readonly="readonly"></td>
+                <td><input type="text" value="<%=SCH_date %>" name="SCH_date" readonly="readonly"></td>
             </tr>
             <tr>
                 <td>排班时间</td>
@@ -81,7 +81,7 @@
             </tr>
             <tr>
                 <td>排班日期</td>
-                <td><input type="text" value="<%=SCH_date %>" name="DSCH_date" readonly="readonly"></td>
+                <td><input type="text" value="<%=SCH_date %>" name="SCH_date" readonly="readonly"></td>
             </tr>
             <tr>
                 <td>排班时间</td>
