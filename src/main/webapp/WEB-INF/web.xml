@@ -127,6 +127,7 @@
         <url-pattern>/updateInterviewServlet</url-pattern>
     </servlet-mapping>
 
+    <!-- hzw -->
     <servlet>
         <servlet-name>patientLoginServlet</servlet-name>
         <servlet-class>servlets.patientLoginServlet</servlet-class>
@@ -182,6 +183,25 @@
     <servlet-mapping>
         <servlet-name>addDoctorServlet</servlet-name>
         <url-pattern>/addDoctorServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- lyy患者登录 -->
+    <servlet>
+        <servlet-name>PatientLoginServlet</servlet-name>
+        <servlet-class>controller.patient.PatientLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PatientLoginServlet</servlet-name>
+        <url-pattern>/patient/PatientLoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>PatientRegisterServlet</servlet-name>
+        <servlet-class>controller.patient.PatientRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PatientRegisterServlet</servlet-name>
+        <url-pattern>/patient/PatientRegisterServlet</url-pattern>
     </servlet-mapping>
 </web-app>
 
