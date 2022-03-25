@@ -1,13 +1,12 @@
 package controller;
 
-import java.io.*;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-import javax.servlet.*;
-import javax.servlet.http.*;
-
 import bean.DBBean;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 public class SCHDELServlet extends HttpServlet {
     private DBBean dbbean;
@@ -22,10 +21,11 @@ public class SCHDELServlet extends HttpServlet {
     }
 
     @Override
-    public void doPost(HttpServletRequest request, HttpServletResponse response) {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String SCH_time = request.getParameter("SCH_time");
         String SCH_date = request.getParameter("SCH_date");
         dbbean.update("delete from SCH where SCH_time='" + SCH_time + "' and SCH_date='" + SCH_date + "'");
         System.out.println("删除成功");
+        request.getRequestDispatcher("../index.jsp").forward(request,response);
     }
 }

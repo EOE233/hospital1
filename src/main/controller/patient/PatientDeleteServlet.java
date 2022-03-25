@@ -33,5 +33,6 @@ public class PatientDeleteServlet extends HttpServlet {
 
         String sql = "delete from patient where P_id='" + P_id + "'";
         dbBean.update(sql);
+        req.getRequestDispatcher("index.jsp").forward(req,resp);
     }
 }

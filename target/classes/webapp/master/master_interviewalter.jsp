@@ -26,7 +26,7 @@
     String
             I_time = request.getParameter("I_time"); %>
 
-<form action="http://localhost:8080/hospital/master/InterviewAlterServlet">
+<form action="http://localhost:8080/hospital/master/InterviewAlterServlet" method="post">
     <fieldset>
         <legend>修改信息</legend>
         <table align="center">

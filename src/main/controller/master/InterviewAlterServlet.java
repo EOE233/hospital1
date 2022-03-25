@@ -1,13 +1,12 @@
 package controller.master;
 
-import java.io.*;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-import javax.servlet.*;
-import javax.servlet.http.*;
-
 import bean.DBBean;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 public class InterviewAlterServlet extends HttpServlet {
     private DBBean dbbean;
@@ -31,7 +30,7 @@ public class InterviewAlterServlet extends HttpServlet {
 
         sql = "update interview SET I_date='" + I_date + "', I_time='" + I_time + "' where I_id='" + I_id + "'";
         dbbean.update(sql);
-        request.getRequestDispatcher("http://localhost:8080/hospital").forward(request,response);
+        request.getRequestDispatcher("../index.jsp").forward(request,response);
 
     }
 }

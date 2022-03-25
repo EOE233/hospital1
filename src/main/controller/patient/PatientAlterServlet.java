@@ -34,5 +34,6 @@ public class PatientAlterServlet extends HttpServlet {
 
         String sql = "update patient SET P_psd='" + P_psd + "' where P_id='" + P_id + "'";
         dbBean.update(sql);
+        req.getRequestDispatcher("index.jsp").forward(req,resp);
     }
 }

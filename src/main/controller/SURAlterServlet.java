@@ -1,13 +1,12 @@
 package controller;
 
-import java.io.*;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-import javax.servlet.*;
-import javax.servlet.http.*;
-
 import bean.DBBean;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 public class SURAlterServlet extends HttpServlet {
     private DBBean dbbean;
@@ -30,5 +29,6 @@ public class SURAlterServlet extends HttpServlet {
 
         String sql = "update surgery SET SUR_site='" + SUR_site + "' where SUR_id='" + SUR_id + "'";
         dbbean.update(sql);
+        request.getRequestDispatcher("../index.jsp").forward(request,response);
     }
 }

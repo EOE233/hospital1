@@ -1,13 +1,12 @@
 package controller;
 
-import java.io.*;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-import javax.servlet.*;
-import javax.servlet.http.*;
-
 import bean.DBBean;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 public class SCHAlterServlet extends HttpServlet {
 
@@ -33,6 +32,6 @@ public class SCHAlterServlet extends HttpServlet {
 
         String sql = "update SCH SET  SCH_size='" + SCH_size + "' where SCH_date='" + SCH_date +"' and SCH_time='" + SCH_time +"'";
         dbbean.update(sql);
-        req.getRequestDispatcher("index.jsp").forward(req,resp);
+        req.getRequestDispatcher("../index.jsp").forward(req,resp);
     }
 }
